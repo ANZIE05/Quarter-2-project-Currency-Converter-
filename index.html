@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<htm>
+    <head>
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Currency Converter</h1>
+            <form id="converter-form">
+                <label for="from">From Currency:</label>
+                <select id="from" name="from">
+                    <option value="USD">USD</option>
+                    <option value="EURO">EURO</option>
+                    <option value="AED">AED</option>
+                    <option value="SAR">SAR</option>
+                    <option value="PKR">PKR</option>
+                </select>
+
+                <label for="to">To Currency:</label>
+                <select id="to" name="t0">
+                    <option value="USD">USD</option>
+                    <option value="EURO">EURO</option>
+                    <option value="AED">AED</option>
+                    <option value="SAR">SAR</option>
+                    <option value="PKR">PKR</option>
+                </select>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+                <button type="submit">Convert</button>
+            </form>
+
+            <p id="result"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</htm>
